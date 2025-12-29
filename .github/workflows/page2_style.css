@@ -1,0 +1,91 @@
+        :root {
+            --primary-color: #d35400;
+            --secondary-color: #f39c12;
+            --dark-color: #2c3e50;
+            --light-color: #fffaf0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+        }
+        .dropdown { position: relative; }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 10;
+            border-radius: 5px;
+        }
+        .dropdown-content a {
+            color: var(--dark-color);
+            display: block;
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .dropdown:hover .dropdown-content { display: block; }
+        .container {
+            max-width: 850px;
+            margin: 2rem auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 { color: var(--primary-color); text-align: center; font-size: 2.2rem; }
+        h2 { color: var(--secondary-color); border-bottom: 2px solid #eee; padding-bottom: 5px; margin-top: 30px; }
+        .section-header {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-top: 20px;
+            display: block;
+        }
+        .recipe-img {
+            width: 70%;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .tip-box {
+            background-color: #fff9e6;
+            border-left: 5px solid var(--secondary-color);
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+        ul, ol { padding-left: 25px; }
+        li { margin-bottom: 8px; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--dark-color);
+            color: white;
+            margin-top: 3rem;
+        }

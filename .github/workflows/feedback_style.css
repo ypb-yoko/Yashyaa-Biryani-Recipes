@@ -1,0 +1,86 @@
+        :root {
+            --primary-color: #d35400;
+            --secondary-color: #f39c12;
+            --dark-color: #2c3e50;
+            --light-color: #fffaf0;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        .container {
+            max-width: 600px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h2 { color: var(--primary-color); text-align: center; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .submit-btn{
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            width: 100%;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .rating-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .rating-option {
+            flex: 1;
+            text-align: center;
+        }
+        .rating-option input[type="radio"] {
+            display: none; 
+        }
+        .rating-option label {
+            display: block;
+            padding: 10px;
+            border: 2px solid var(--secondary-color);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        .rating-option input[type="radio"]:checked + label {
+            background-color: var(--secondary-color);
+            color: white;
+            border-color: var(--primary-color);
+            transform: scale(1.05);
+        }
+        .submit-btn:hover { background-color: var(--primary-color); }
+        footer { text-align: center; padding: 2rem; background: var(--dark-color); color: white; margin-top: 3rem; }
